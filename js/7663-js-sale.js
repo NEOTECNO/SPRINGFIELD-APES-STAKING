@@ -383,7 +383,11 @@ const getTokens = async (e)=> {
 			colTokensArray = Array.from(getTokensArray);
 
 			if (getTokensArray != "") {
-				
+				const element = document.getElementById('example');
+				if (element) {
+					element.remove(); // Removes the div with the 'div-02' id
+				}
+
 				for(var i=0 ; i<NFTamount ; i++) {
 					let div = document.createElement('p');
 					div.className = 'NFTcard';
@@ -427,6 +431,10 @@ const getTokens2 = async (e)=> {
 			stakedTokensArray = Array.from(tokensStaked);
 
 			if (tokensStaked != "") {
+				const element = document.getElementById('example');
+				if (element) {
+					element.remove(); // Removes the div with the 'div-02' id
+				}
 				
 				for(var i = 0 ; i < NFTstaked ; i++) {
 					let div = document.createElement('p');

@@ -1,4 +1,3 @@
-
 function ready() {
     let domInNumber = document.querySelector('.js-in-number');
 
